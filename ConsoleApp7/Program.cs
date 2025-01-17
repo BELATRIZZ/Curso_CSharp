@@ -4,12 +4,24 @@
     {
         static void Main(string[] args)
         {
-            double nota_final = 90;
+            double nota_final, n1,n2,n3,n4;
             string resultado;
 
-            if (nota_final >= 60)
+            Console.Write("Digite a primeira nota do aluno : ");
+            n1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Digite a segunda nota do aluno : ");
+            n2 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Digite a terceita nota do aluno : ");
+            n3 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Digite a quarta nota do aluno : ");
+            n4 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Digite a quinta nota do aluno : ");
+
+            nota_final = (n1 + n2 + n3 + n4) / 4;
+
+            if (nota_final >= 7)
             {
-                if(nota_final >= 90)
+                if(nota_final >= 10)
                 {
                     resultado = "Aprovado com louvor";
                 }
@@ -19,7 +31,7 @@
                 }
                 
             }
-            else if (nota_final >= 40)
+            else if (nota_final >= 5)
             {
                 resultado = "Recuperação";
             }
