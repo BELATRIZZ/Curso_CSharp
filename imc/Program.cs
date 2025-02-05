@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            
             Console.WriteLine(" Digite seu peso: ");
             double peso = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Digite sua altura :");
